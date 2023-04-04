@@ -8,28 +8,23 @@
         {
             "name" : "Scene",
             "nodes" : [
-                0,
                 2
             ]
         }
     ],
     "nodes" : [
         {
-            "mesh" : 0,
-            "name" : "Cube.001",
-            "rotation" : [
-                0.7071068286895752,
-                0,
-                0,
-                0.7071068286895752
-            ]
-        },
-        {
             "name" : "Bone"
         },
         {
+            "mesh" : 0,
+            "name" : "Cube.001",
+            "skin" : 0
+        },
+        {
             "children" : [
-                1
+                1,
+                0
             ],
             "name" : "Armature"
         }
@@ -40,18 +35,20 @@
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 0
+                        "POSITION" : 0,
+                        "JOINTS_0" : 1,
+                        "WEIGHTS_0" : 2
                     },
-                    "indices" : 1
+                    "indices" : 3
                 }
             ]
         }
     ],
     "skins" : [
         {
-            "inverseBindMatrices" : 2,
+            "inverseBindMatrices" : 4,
             "joints" : [
-                1
+                0
             ],
             "name" : "Armature"
         }
@@ -62,25 +59,37 @@
             "componentType" : 5126,
             "count" : 8,
             "max" : [
-                1,
-                1,
+                0.6816269159317017,
+                1.2658504247665405,
                 1
             ],
             "min" : [
-                -1,
-                -1,
+                -1.3183730840682983,
+                -0.734149694442749,
                 -1
             ],
             "type" : "VEC3"
         },
         {
             "bufferView" : 1,
+            "componentType" : 5121,
+            "count" : 8,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 8,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 3,
             "componentType" : 5123,
             "count" : 36,
             "type" : "SCALAR"
         },
         {
-            "bufferView" : 2,
+            "bufferView" : 4,
             "componentType" : 5126,
             "count" : 1,
             "type" : "MAT4"
@@ -95,20 +104,32 @@
         },
         {
             "buffer" : 0,
-            "byteLength" : 72,
+            "byteLength" : 32,
             "byteOffset" : 96,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 128,
+            "byteOffset" : 128,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 72,
+            "byteOffset" : 256,
             "target" : 34963
         },
         {
             "buffer" : 0,
             "byteLength" : 64,
-            "byteOffset" : 168
+            "byteOffset" : 328
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 232,
-            "uri" : "data:application/octet-stream;base64,AACAPwAAgL8AAIC/AACAPwAAgL8AAIA/AACAPwAAgD8AAIC/AACAPwAAgD8AAIA/AACAvwAAgL8AAIC/AACAvwAAgL8AAIA/AACAvwAAgD8AAIC/AACAvwAAgD8AAIA/AAAEAAYAAAAGAAIAAwACAAYAAwAGAAcABwAGAAQABwAEAAUABQABAAMABQADAAcAAQAAAAIAAQACAAMABQAEAAAABQAAAAEAAACAPwAAAIAAAAAAAAAAgAAAAIAAAIA/AAAAgAAAAAAAAAAAAAAAgAAAgD8AAACAAAAAgAAAAAAAAACAAACAPw=="
+            "byteLength" : 392,
+            "uri" : "data:application/octet-stream;base64,Gn8uP2MHoj///3+/Gn8uPzvxO78AAIC/Gn8uP2IHoj8AAIA/Gn8uPzzxO7///38/c8Cov2MHoj///3+/c8CovzvxO78AAIC/c8Cov2IHoj8AAIA/c8CovzzxO7///38/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAABAAGAAAABgACAAMAAgAGAAMABgAHAAcABgAEAAcABAAFAAUAAQADAAUAAwAHAAEAAAACAAEAAgADAAUABAAAAAUAAAABAAAAgD8AAACAAAAAAAAAAIAAAACAAACAPwAAAIAAAAAAAAAAAAAAAIAAAIA/AAAAgAAAAIAAAAAAAAAAgAAAgD8="
         }
     ]
 }
